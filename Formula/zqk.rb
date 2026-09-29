@@ -1,26 +1,26 @@
 class Zqk < Formula
   desc "Kernel and orchestration CLI for AI-human hybrid software engineering"
   homepage "https://zqk.dev"
-  version "0.1.0-beta.4"
+  version "0.1.0-beta.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk-community_#{version}_darwin_arm64.tar.gz"
-      sha256 "92ccc0e27edb2184f0cb76627de03acf94f0ddda8d937048db2745247f8c2d14"
+      sha256 "f223cc2bc5fae22fb0e6b28db81c57f86a5279ad954ce9d21eafc37e551d90c6"
     else
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk-community_#{version}_darwin_amd64.tar.gz"
-      sha256 "a7dc921acc3ada00051fa808cf8b69fa8ecae8f038076a07b9cbc8644e46b4ef"
+      sha256 "7ce1be29fac6560ba97b830e09eb93c6cfbeab2b3d3bc5ed91cb081aa695691e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk-community_#{version}_linux_arm64.tar.gz"
-      sha256 "2b6887060936fa1b61add20045d6eb4b448a828076688644a71b356ccf6bbb91"
+      sha256 "1607da65ad8ffa67b304d55e8630b18be36ce510b6f83c71099f770920667f4c"
     else
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk-community_#{version}_linux_amd64.tar.gz"
-      sha256 "c9a2250ceb9ae088a09bf9c32ff6029e518c8d7786f978172435d2f209c157f9"
+      sha256 "439f24abf924441597aa768c38312e713f538ac939ae799cc9b6fff06ebe2481"
     end
   end
 
