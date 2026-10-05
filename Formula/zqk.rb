@@ -7,20 +7,20 @@ class Zqk < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk_#{version}_darwin_arm64.tar.gz"
-      sha256 "b56b4154d262e8892cf66f7ce1624a75bd2bcfa942fc00b45a574d838f0a0d77"
+      sha256 "dd3797e74a485e9151c579f6bb089116b73e3e72a062d6031e619a8c1bfd79cb"
     else
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk_#{version}_darwin_amd64.tar.gz"
-      sha256 "91343295d1bf85c6289378d6251e4d11d0cae0629694cb7770f5c6d97b313e71"
+      sha256 "2d7a54d89ac0761a80950e82f51ac0605dca1a62914a794b4ff21f088963399e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk_#{version}_linux_arm64.tar.gz"
-      sha256 "dead82e3b70ce2c061aa0e39fc260c2dd14b1d1c5aff42fa40b1ee18c599f9d6"
+      sha256 "b37e9f2d7b4d26d4ce61d889709ea2f61f3e34a4248e706b33e91f897c90f41e"
     else
       url "https://github.com/zqk-os/zqk/releases/download/v#{version}/zqk_#{version}_linux_amd64.tar.gz"
-      sha256 "88cd2e15a8932d7d86c1f5f164f64ee5467c16efb6012978ebc07041d43f9792"
+      sha256 "908b2e53de042f1ea7d85e8282d5e9b80f0d33bf83bf74f74ee090bd2008b8d4"
     end
   end
 
